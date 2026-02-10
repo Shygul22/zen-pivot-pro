@@ -12,6 +12,7 @@ import Privacy from "./pages/Privacy";
 import Refund from "./pages/Refund";
 import NotFound from "./pages/NotFound";
 import { ThemeProvider } from "./components/theme-provider";
+import TopBanner from "./components/TopBanner";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
+        <TopBanner />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
