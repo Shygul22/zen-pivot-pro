@@ -12,7 +12,16 @@ const ServiceCard = ({ service, iconColorClass = "text-primary", buttonVariant =
   const hasMore = service.features.length > 5;
 
   return (
-    <Card className={`p-8 h-full border-${iconColorClass.replace('text-', '')}/20 bg-card/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden group flex flex-col`}>
+    <Card className={`p-8 h-full bg-card/80 backdrop-blur-sm hover:shadow-lg transition-all duration-300 relative overflow-hidden group flex flex-col ${service.popular
+      ? "border-primary shadow-md ring-1 ring-primary/20"
+      : `border-${iconColorClass.replace('text-', '')}/20`
+      }`}>
+      {service.popular && (
+        <div className="absolute top-0 right-0 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-bl-lg z-20">
+          Limited Time Offer
+        </div>
+      )}
+
       <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
         <service.icon className={`w-24 h-24 ${iconColorClass === 'text-secondary' ? 'text-secondary' : ''}`} />
       </div>
@@ -72,14 +81,14 @@ const ServiceCard = ({ service, iconColorClass = "text-primary", buttonVariant =
       <div className="relative z-10 mt-auto space-y-3">
         {service.url ? (
           <a href={service.url} target="_blank" rel="noopener noreferrer" className="block w-full">
-            <Button className="w-full group" variant={buttonVariant}>
+            <Button className="w-full group" variant={service.popular ? "default" : buttonVariant}>
               {service.price === "Free" ? "Install Now" : "Get Started"}
             </Button>
           </a>
         ) : (
           <Button
             className="w-full group"
-            variant={buttonVariant}
+            variant={service.popular ? "default" : buttonVariant}
             onClick={() => window.open("https://wa.me/919629236257?text=Hi%2C%20I'm%20interested%20in%20your%20services", "_blank")}
           >
             {service.price === "Free" ? "Install Now" : "Get Started"}
@@ -108,8 +117,9 @@ const Services = () => {
       icon: Smartphone,
       title: "Custom Android & Website App Development",
       plan: "Startup Plan",
-      price: "₹30,600",
+      price: "₹17,000",
       mrp: "₹34,000",
+      popular: true,
       serviceAgreement: "https://docs.google.com/document/d/e/2PACX-1vT4l_0fu0j9WuQlHSUgLUV-f__SenaCNTTFY4Eibr6fgoMT6b3SMmpxy0CdZTByduVFP039HW3PpZFc/pub",
       features: [
         "Native Android App",

@@ -21,25 +21,7 @@ const TopBanner = () => {
                         <span>
                             🎉 <span className="font-bold">Limited Time Offer:</span> Custom Android & Website App Development @ ₹17,000
                         </span>
-                        <span className="hidden md:inline">•</span>
-                        <span>Includes Sitemaps & Indexing</span>
-                        <span className="hidden md:inline">•</span>
-                        <a
-                            href="https://docs.google.com/document/d/e/2PACX-1vT4l_0fu0j9WuQlHSUgLUV-f__SenaCNTTFY4Eibr6fgoMT6b3SMmpxy0CdZTByduVFP039HW3PpZFc/pub"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="underline hover:text-accent transition-colors"
-                        >
-                            View Service Agreement
-                        </a>
                     </div>
-                    <button
-                        onClick={() => setIsVisible(false)}
-                        className="p-1 hover:bg-primary-foreground/10 rounded-full transition-colors shrink-0"
-                        aria-label="Close banner"
-                    >
-                        <X className="w-4 h-4" />
-                    </button>
                 </div>
             </motion.div>
         </AnimatePresence>
