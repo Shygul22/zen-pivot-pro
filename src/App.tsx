@@ -10,9 +10,9 @@ import BlogAdmin from "./pages/BlogAdmin";
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import Refund from "./pages/Refund";
+import InternshipPolicy from "./pages/InternshipPolicy";
 import NotFound from "./pages/NotFound";
 import { ThemeProvider } from "./components/theme-provider";
-import TopBanner from "./components/TopBanner";
 
 const queryClient = new QueryClient();
 
@@ -22,7 +22,6 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <TopBanner />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
@@ -32,6 +31,7 @@ const App = () => (
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/refund" element={<Refund />} />
+            <Route path="/internship-policy" element={<InternshipPolicy />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

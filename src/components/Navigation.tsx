@@ -59,7 +59,7 @@ const Navigation = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
               whileHover={{ scale: 1.1, color: "hsl(var(--primary))" }}
-              href="/blog"
+              href="https://zenjourney.io/blog/"
               className="text-foreground hover:text-primary transition-colors"
             >
               Blog
@@ -147,7 +147,7 @@ const Navigation = () => {
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ delay: 0.2 }}
                   whileHover={{ x: 5, backgroundColor: "hsl(var(--primary) / 0.05)" }}
-                  href="/blog"
+                  href="https://zenjourney.io/blog/"
                   className="block w-full text-left px-4 py-2 text-foreground hover:text-primary rounded transition-colors"
                 >
                   Blog

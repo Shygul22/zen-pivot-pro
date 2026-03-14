@@ -5,8 +5,19 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock } from "lucide-react";
-import { fetchWPPosts, isWordPressConfigured, BlogPost } from "@/lib/wordpress";
+import { supabase } from "@/integrations/supabase";
 import { toast } from "sonner";
+
+interface BlogPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  date: string;
+  author: string;
+  category: string;
+  read_time: string;
+}
 
 const Blog = () => {
   const [posts, setPosts] = useState<BlogPost[]>([]);
@@ -17,14 +28,14 @@ const Blog = () => {
   }, []);
 
   const loadPosts = async () => {
-    if (!isWordPressConfigured()) {
-      setLoading(false);
-      return;
-    }
-
     try {
-      const data = await fetchWPPosts();
-      setPosts(data);
+      const { data, error } = await supabase
+        .from('blog_posts')
+        .select('*')
+        .order('date', { ascending: false });
+
+      if (error) throw error;
+      setPosts(data || []);
     } catch (error: any) {
       toast.error("Failed to load blog posts");
       console.error(error);
@@ -63,21 +74,8 @@ const Blog = () => {
             </p>
           </div>
 
-          {/* Configuration Notice */}
-          {!isWordPressConfigured() && (
-            <div className="text-center py-16 bg-card/50 rounded-lg border border-border/50">
-              <h2 className="text-2xl font-bold text-foreground mb-4">WordPress Integration Ready</h2>
-              <p className="text-muted-foreground max-w-md mx-auto mb-6">
-                To display blog posts, configure your WordPress site URL in <code className="bg-muted px-2 py-1 rounded">src/lib/wordpress.ts</code>
-              </p>
-              <p className="text-sm text-muted-foreground">
-                Example: <code className="bg-muted px-2 py-1 rounded">export const WORDPRESS_API_URL = 'https://yoursite.com';</code>
-              </p>
-            </div>
-          )}
-
           {/* Blog Posts Grid */}
-          {isWordPressConfigured() && posts.length === 0 && !loading && (
+          {posts.length === 0 && !loading && (
             <div className="text-center py-16 col-span-full">
               <p className="text-muted-foreground">No blog posts found.</p>
             </div>

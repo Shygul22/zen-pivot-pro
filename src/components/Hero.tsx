@@ -35,7 +35,7 @@ const Hero = () => {
               variants={fadeInUp}
               className="inline-block px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-4"
             >
-              <span className="text-foreground font-semibold">Android Apps • Web Development • Business Support</span>
+              <span className="text-foreground font-semibold">Android Apps • Web Development • SaaS Solutions • Business Consultant</span>
             </motion.div>
             <motion.h1
               variants={fadeInUp}
@@ -49,8 +49,7 @@ const Hero = () => {
               variants={fadeInUp}
               className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
             >
-              Expert Custom Android & Website App Development starts at ₹30,600.
-              Comprehensive business support to ensure your long-term success.
+              Software Development and IT Services including Android Mobile App Development, Website Development, and Digital Solutions for Businesses and Individuals.
             </motion.p>
           </div>
 

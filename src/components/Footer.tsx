@@ -12,7 +12,7 @@ const Footer = () => {
               ZenJourney
             </h3>
             <p className="text-muted-foreground text-sm">
-              Balance Your Time, Elevate Your Life
+              Software Development & IT Services
             </p>
             <p className="text-xs text-muted-foreground font-medium">
               UDYAM Registration: UDYAM-TN-04-0104781
@@ -35,9 +35,9 @@ const Footer = () => {
             <ul className="space-y-2">
               {/* Home link removed */}
               <li>
-                <Link to="/blog" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                <a href="https://zenjourney.io/blog/" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                   Blog
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -62,6 +62,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/internship-policy" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                  Internship Policy
+                </Link>
+              </li>
+              <li>
                 <a
                   href="https://docs.google.com/document/d/e/2PACX-1vT4l_0fu0j9WuQlHSUgLUV-f__SenaCNTTFY4Eibr6fgoMT6b3SMmpxy0CdZTByduVFP039HW3PpZFc/pub"
                   target="_blank"
@@ -78,11 +83,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>hello@zenjourney.in</li>
-              <li>zenjourney.in@gmail.com</li>
-              <li>+91 9092406569</li>
-              <li>+91 9629236257</li>
-              <li>ZenJourney.in</li>
+              <li>info@zenjourney.io</li>
+              <li>+91 9092406569, +91 9629236257</li>
+              <li>ZenJourney.io</li>
             </ul>
           </div>
         </div>

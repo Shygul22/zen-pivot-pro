@@ -12,8 +12,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      values: ["hello@zenjourney.in", "zenjourney.in@gmail.com"],
-      href: "mailto:hello@zenjourney.in"
+      values: ["info@zenjourney.io"],
+      href: "mailto:info@zenjourney.io"
     },
     {
       icon: Phone,
@@ -24,8 +24,8 @@ const Contact = () => {
     {
       icon: Globe,
       title: "Website",
-      values: ["ZenJourney.in"],
-      href: "https://zenjourney.in"
+      values: ["ZenJourney.io"],
+      href: "https://zenjourney.io"
     }
   ];
 
@@ -101,7 +101,7 @@ const Contact = () => {
                   size="lg"
                   variant="hero"
                   className="text-lg px-10 py-6"
-                  onClick={() => window.location.href = 'mailto:hello@zenjourney.in'}
+                  onClick={() => window.location.href = 'mailto:info@zenjourney.io'}
                 >
                   Start Your Journey
                 </Button>

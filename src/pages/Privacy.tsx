@@ -149,9 +149,9 @@ const Privacy = () => {
                   If you have questions or concerns about this Privacy Policy, please contact us:
                 </p>
                 <div className="space-y-2 text-muted-foreground">
-                  <p><strong className="text-foreground">Email:</strong> hello@zenjourney.in</p>
-                  <p><strong className="text-foreground">Phone:</strong> +91 9092406569</p>
-                  <p><strong className="text-foreground">Website & App:</strong> ZenJourney.in</p>
+                  <p><strong className="text-foreground">Email:</strong> info@zenjourney.io</p>
+                  <p><strong className="text-foreground">Phone:</strong> +91 9092406569, +91 9629236257</p>
+                  <p><strong className="text-foreground">Website:</strong> ZenJourney.io</p>
                   <p><strong className="text-foreground">UDYAM Registration:</strong> UDYAM-TN-04-0104781</p>
                 </div>
               </section>

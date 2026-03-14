@@ -82,7 +82,7 @@ const ServiceCard = ({ service, iconColorClass = "text-primary", buttonVariant =
         {service.url ? (
           <a href={service.url} target="_blank" rel="noopener noreferrer" className="block w-full">
             <Button className="w-full group" variant={service.popular ? "default" : buttonVariant}>
-              {service.price === "Free" ? "Install Now" : "Get Started"}
+              Get Started
             </Button>
           </a>
         ) : (
@@ -91,7 +91,7 @@ const ServiceCard = ({ service, iconColorClass = "text-primary", buttonVariant =
             variant={service.popular ? "default" : buttonVariant}
             onClick={() => window.open("https://wa.me/919629236257?text=Hi%2C%20I'm%20interested%20in%20your%20services", "_blank")}
           >
-            {service.price === "Free" ? "Install Now" : "Get Started"}
+            Get Started
           </Button>
         )}
         {service.serviceAgreement && (
@@ -117,8 +117,9 @@ const Services = () => {
       icon: Smartphone,
       title: "Custom Android & Website App Development",
       plan: "Startup Plan",
-      price: "₹17,000",
-      mrp: "₹34,000",
+      price: "₹34,999",
+      mrp: "₹61,195",
+      url: "https://forms.gle/WXKcB8c5hpCeorbk9",
       popular: true,
       serviceAgreement: "https://docs.google.com/document/d/e/2PACX-1vT4l_0fu0j9WuQlHSUgLUV-f__SenaCNTTFY4Eibr6fgoMT6b3SMmpxy0CdZTByduVFP039HW3PpZFc/pub",
       features: [
@@ -127,32 +128,39 @@ const Services = () => {
         "Free hosting",
         "Limited Database",
         "Play Store publish",
-        "Maintenance fee (one-time, covering three months)",
-        "Project delivery under 8 weeks"
+        "Maintenance fee (one-time, covering Four months)",
+        "Project delivery Expected 8 weeks"
       ]
     },
     {
       icon: Briefcase,
       title: "Business Support",
       plan: "One Month Support",
-      price: "₹5,000",
+      price: "₹4,999",
       mrp: "₹10,000",
       features: [
-        "Day-to-day technical assistance",
-        "System monitoring & optimization",
-        "Incident management & rapid response",
-        "Regular maintenance & health checks",
-        "Bug fixes, patches & security updates",
-        "Infrastructure stability management",
-        "Continuous feature development",
-        "Platform upgrades & modernization",
-        "Integration of new tools & APIs",
-        "Scalability planning & optimization",
-        "Performance tuning for growth",
-        "Support for new market launches",
-        "Dedicated support plans",
-        "Proactive improvement recommendations",
-        "Flexible engagement models"
+        "Finance & Accounting",
+        "Sales & CRM",
+        "Marketing Automation",
+        "HR Management",
+        "Manufacturing & Inventory",
+        "Project & Operations",
+        "Customer Support",
+        "Digital Platforms"
+      ]
+    },
+    {
+      icon: Check,
+      title: "Udyam Registration",
+      plan: "MSME Registration",
+      price: "Free",
+      mrp: null,
+      features: [
+        "Official Government Registration",
+        "MSME Certificate Generation",
+        "Lifetime Validity",
+        "Digital Verification Support",
+        "Zero Registration Cost"
       ]
     }
   ];
@@ -178,6 +186,7 @@ const Services = () => {
       plan: "Developer Account",
       price: "$30",
       mrp: null,
+      url: "https://forms.gle/JMbd7gq21e6yxR5a8",
       description: "Account purchasing $25 + $5 charges (zenjoureny)",
       features: [
         "Google Play Console Access",
@@ -222,7 +231,7 @@ const Services = () => {
             variants={staggerContainer}
             initial="initial"
             animate={isVisible ? "animate" : "initial"}
-            className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto"
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
           >
             {b2bServices.map((service, index) => (
               <motion.div key={index} variants={staggerItem} className="h-full">

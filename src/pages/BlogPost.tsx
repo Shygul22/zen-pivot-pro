@@ -74,12 +74,12 @@ const BlogPost = () => {
       <main className="pt-24 pb-16">
         <article className="container mx-auto px-4 max-w-4xl">
           {/* Back Button */}
-          <Link to="/blog" className="inline-block mb-8">
+          <a href="https://zenjourney.io/blog/" className="inline-block mb-8">
             <Button variant="ghost" className="gap-2">
               <ArrowLeft className="w-4 h-4" />
               Back to Blog
             </Button>
-          </Link>
+          </a>
 
           {/* Article Header */}
           <header className="space-y-6 mb-12 animate-fade-in">
