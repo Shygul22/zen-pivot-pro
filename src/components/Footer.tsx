@@ -35,6 +35,21 @@ const Footer = () => {
             <ul className="space-y-2">
               {/* Home link removed */}
               <li>
+                <Link to="/saas-franchise" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                  SaaS Franchise Partner
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                  Contact Us
+                </Link>
+              </li>
+              <li>
                 <a href="https://zenjourney.io/blog/" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                   Blog
                 </a>

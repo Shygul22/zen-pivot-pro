@@ -11,6 +11,10 @@ import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import Refund from "./pages/Refund";
 import InternshipPolicy from "./pages/InternshipPolicy";
+import SaaSFranchise from "./pages/SaaSFranchise";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+import Checkout from "./pages/Checkout";
 import NotFound from "./pages/NotFound";
 import { ThemeProvider } from "./components/theme-provider";
 
@@ -32,6 +36,11 @@ const App = () => (
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/refund" element={<Refund />} />
             <Route path="/internship-policy" element={<InternshipPolicy />} />
+            <Route path="/saas-franchise" element={<SaaSFranchise />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/checkout" element={<Checkout />} />
+
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

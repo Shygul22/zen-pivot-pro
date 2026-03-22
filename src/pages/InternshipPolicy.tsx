@@ -173,7 +173,7 @@ const InternshipPolicy = () => {
                 <h2 className="text-2xl font-bold text-foreground mb-4">Contact Us</h2>
                 <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-muted-foreground">
                   <p><strong className="text-foreground">Email:</strong> info@zenjourney.io</p>
-                  <p><strong className="text-foreground">Phone:</strong> +91 9092406569</p>
+                  <p><strong className="text-foreground">Phone:</strong> +91 9092406569, +91 9629236257</p>
                 </div>
               </section>
             </div>

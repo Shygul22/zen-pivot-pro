@@ -35,7 +35,7 @@ const Hero = () => {
               variants={fadeInUp}
               className="inline-block px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-4"
             >
-              <span className="text-foreground font-semibold">Android Apps • Web Development • SaaS Solutions • Business Consultant</span>
+              <span className="text-foreground font-semibold">Android Apps • Web Development • SaaS Franchise • Business Consultant</span>
             </motion.div>
             <motion.h1
               variants={fadeInUp}
@@ -62,7 +62,7 @@ const Hero = () => {
                 size="lg"
                 variant="hero"
                 className="text-lg px-8 py-6 group"
-                onClick={() => window.location.href = "https://wa.me/919629236257?text=Hi%2C%20I'm%20interested%20in%20your%20services"}
+                onClick={() => window.location.href = "https://wa.me/919092406569?text=Hi%2C%20I'm%20interested%20in%20your%20services"}
               >
                 Get Started
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />

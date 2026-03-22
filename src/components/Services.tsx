@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Briefcase, Smartphone, Globe, ShoppingBag, Chrome, Check, ChevronDown, ChevronUp } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Briefcase, Smartphone, Globe, ShoppingBag, Chrome, Check, ChevronDown, ChevronUp, Users } from "lucide-react";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { fadeInUp, staggerContainer, staggerItem } from "@/lib/animations";
@@ -80,16 +81,24 @@ const ServiceCard = ({ service, iconColorClass = "text-primary", buttonVariant =
 
       <div className="relative z-10 mt-auto space-y-3">
         {service.url ? (
-          <a href={service.url} target="_blank" rel="noopener noreferrer" className="block w-full">
-            <Button className="w-full group" variant={service.popular ? "default" : buttonVariant}>
-              Get Started
-            </Button>
-          </a>
+          service.url.startsWith('/') ? (
+            <Link to={service.url} className="block w-full">
+              <Button className="w-full group" variant={service.popular ? "default" : buttonVariant}>
+                Get Started
+              </Button>
+            </Link>
+          ) : (
+            <a href={service.url} target="_blank" rel="noopener noreferrer" className="block w-full">
+              <Button className="w-full group" variant={service.popular ? "default" : buttonVariant}>
+                Get Started
+              </Button>
+            </a>
+          )
         ) : (
           <Button
             className="w-full group"
             variant={service.popular ? "default" : buttonVariant}
-            onClick={() => window.open("https://wa.me/919629236257?text=Hi%2C%20I'm%20interested%20in%20your%20services", "_blank")}
+            onClick={() => window.open("https://wa.me/919092406569?text=Hi%2C%20I'm%20interested%20in%20your%20services", "_blank")}
           >
             Get Started
           </Button>
@@ -114,13 +123,31 @@ const Services = () => {
 
   const b2bServices = [
     {
+      icon: Users,
+      title: "SaaS Franchise Partner",
+      plan: "Partnership Program",
+      price: "Enquire Now",
+      mrp: null,
+      url: "/saas-franchise",
+      popular: true,
+      description: "Join our ecosystem and build a sustainable tech business.",
+      features: [
+        "Ready-to-Launch Solutions",
+        "Exclusive Training",
+        "Technical Support",
+        "Brand Authority",
+        "Market Access",
+        "High Revenue Potential"
+      ]
+    },
+    {
       icon: Smartphone,
       title: "Custom Android & Website App Development",
       plan: "Startup Plan",
       price: "₹34,999",
       mrp: "₹61,195",
       url: "https://forms.gle/WXKcB8c5hpCeorbk9",
-      popular: true,
+      popular: false,
       serviceAgreement: "https://docs.google.com/document/d/e/2PACX-1vT4l_0fu0j9WuQlHSUgLUV-f__SenaCNTTFY4Eibr6fgoMT6b3SMmpxy0CdZTByduVFP039HW3PpZFc/pub",
       features: [
         "Native Android App",
@@ -226,12 +253,11 @@ const Services = () => {
             <Briefcase className="w-8 h-8 text-primary" />
             <h3 className="text-3xl font-bold text-foreground">For Business (B2B)</h3>
           </motion.div>
-
           <motion.div
             variants={staggerContainer}
             initial="initial"
             animate={isVisible ? "animate" : "initial"}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+            className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto"
           >
             {b2bServices.map((service, index) => (
               <motion.div key={index} variants={staggerItem} className="h-full">
