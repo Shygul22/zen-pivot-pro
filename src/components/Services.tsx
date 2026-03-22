@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Briefcase, Smartphone, Globe, ShoppingBag, Chrome, Check, ChevronDown, ChevronUp, Users } from "lucide-react";
+import { Briefcase, Smartphone, Globe, ShoppingBag, Chrome, Check, ChevronDown, ChevronUp, Users, Activity, Sparkles, Coffee, Truck } from "lucide-react";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { fadeInUp, staggerContainer, staggerItem } from "@/lib/animations";
@@ -80,17 +80,21 @@ const ServiceCard = ({ service, iconColorClass = "text-primary", buttonVariant =
       </div>
 
       <div className="relative z-10 mt-auto space-y-3">
-        {service.url ? (
+        {service.comingSoon ? (
+          <Button className="w-full" disabled variant="outline">
+            Coming Soon
+          </Button>
+        ) : service.url ? (
           service.url.startsWith('/') ? (
             <Link to={service.url} className="block w-full">
               <Button className="w-full group" variant={service.popular ? "default" : buttonVariant}>
-                Get Started
+                {service.buttonText || "Get Started"}
               </Button>
             </Link>
           ) : (
             <a href={service.url} target="_blank" rel="noopener noreferrer" className="block w-full">
               <Button className="w-full group" variant={service.popular ? "default" : buttonVariant}>
-                Get Started
+                {service.buttonText || "Get Started"}
               </Button>
             </a>
           )
@@ -100,7 +104,7 @@ const ServiceCard = ({ service, iconColorClass = "text-primary", buttonVariant =
             variant={service.popular ? "default" : buttonVariant}
             onClick={() => window.open("https://wa.me/919092406569?text=Hi%2C%20I'm%20interested%20in%20your%20services", "_blank")}
           >
-            Get Started
+            {service.buttonText || "Get Started"}
           </Button>
         )}
         {service.serviceAgreement && (
@@ -126,11 +130,12 @@ const Services = () => {
       icon: Users,
       title: "SaaS Franchise Partner",
       plan: "Partnership Program",
-      price: "Enquire Now",
+      price: "Partnership",
       mrp: null,
       url: "/saas-franchise",
       popular: true,
-      description: "Join our ecosystem and build a sustainable tech business.",
+      buttonText: "Learn More",
+      description: "Explore our comprehensive franchise ecosystem and business models.",
       features: [
         "Ready-to-Launch Solutions",
         "Exclusive Training",
@@ -146,7 +151,7 @@ const Services = () => {
       plan: "Startup Plan",
       price: "₹34,999",
       mrp: "₹61,195",
-      url: "https://forms.gle/WXKcB8c5hpCeorbk9",
+      url: "/checkout?plan=Custom Development&price=₹34,999",
       popular: false,
       serviceAgreement: "https://docs.google.com/document/d/e/2PACX-1vT4l_0fu0j9WuQlHSUgLUV-f__SenaCNTTFY4Eibr6fgoMT6b3SMmpxy0CdZTByduVFP039HW3PpZFc/pub",
       features: [
@@ -165,6 +170,7 @@ const Services = () => {
       plan: "One Month Support",
       price: "₹4,999",
       mrp: "₹10,000",
+      url: "/checkout?plan=Business Support&price=₹4,999",
       features: [
         "Finance & Accounting",
         "Sales & CRM",
@@ -182,12 +188,85 @@ const Services = () => {
       plan: "MSME Registration",
       price: "Free",
       mrp: null,
+      url: "/checkout?plan=Udyam Registration&price=Free",
       features: [
         "Official Government Registration",
         "MSME Certificate Generation",
         "Lifetime Validity",
         "Digital Verification Support",
         "Zero Registration Cost"
+      ]
+    },
+    {
+      icon: Activity,
+      title: "Healthcare Clinics ERP",
+      plan: "Digital Health Suite",
+      price: "Coming Soon",
+      mrp: null,
+      url: null,
+      comingSoon: true,
+      description: "Complete management system for clinics and hospitals.",
+      features: [
+        "Patient Records (EMR)",
+        "Appointment Scheduling",
+        "Billing & Insurance",
+        "Inventory Management",
+        "Staff Coordination",
+        "Reports & Analytics"
+      ]
+    },
+    {
+      icon: Sparkles,
+      title: "Beauty & Lifestyle CRM",
+      plan: "Salon & Spa Suite",
+      price: "Coming Soon",
+      mrp: null,
+      url: null,
+      comingSoon: true,
+      description: "Specialized CRM for beauty salons and wellness centers.",
+      features: [
+        "Customer Retention",
+        "Membership Programs",
+        "Online Bookings",
+        "Product Sales Tracking",
+        "Service History",
+        "Marketing Campaigns"
+      ]
+    },
+    {
+      icon: Coffee,
+      title: "Catering Service Management",
+      plan: "Event Ops Suite",
+      price: "Coming Soon",
+      mrp: null,
+      url: null,
+      comingSoon: true,
+      description: "Manage large-scale catering operations and events.",
+      features: [
+        "Menu Planning",
+        "Staff Scheduling",
+        "Vendor Coordination",
+        "Cost Calculation",
+        "Client Portals",
+        "Quote Generation"
+      ]
+    },
+    {
+      icon: Truck,
+      title: "Foodie QEcoms Delivery",
+      plan: "Quick Commerce Engine",
+      price: "Coming Soon",
+      mrp: null,
+      url: null,
+      comingSoon: true,
+      description: "Hyperlocal delivery platform for food and grocery.",
+      features: [
+        "Real-time Tracking",
+        "Merchant Dashboard",
+        "Driver Management",
+        "Multi-store Support",
+        "Dynamic Routing",
+        "Quick Checkout"
       ]
     }
   ];
@@ -199,7 +278,7 @@ const Services = () => {
       plan: "Productivity Tool",
       price: "Free",
       mrp: null,
-      url: "https://chromewebstore.google.com/detail/jljicmbnlammjaapklcggfaogiladlcf?utm_source=item-share-cb",
+      url: "/checkout?plan=Zenaura Extension&price=Free",
       features: [
         "Focus Mode",
         "Task Management",
@@ -213,7 +292,7 @@ const Services = () => {
       plan: "Developer Account",
       price: "$30",
       mrp: null,
-      url: "https://forms.gle/JMbd7gq21e6yxR5a8",
+      url: "/checkout?plan=Playstore Console&price=$30",
       description: "Account purchasing $25 + $5 charges (zenjoureny)",
       features: [
         "Google Play Console Access",
@@ -257,7 +336,7 @@ const Services = () => {
             variants={staggerContainer}
             initial="initial"
             animate={isVisible ? "animate" : "initial"}
-            className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto"
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
           >
             {b2bServices.map((service, index) => (
               <motion.div key={index} variants={staggerItem} className="h-full">

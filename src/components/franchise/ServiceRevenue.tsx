@@ -14,23 +14,23 @@ const ServiceRevenue = () => {
   const modelData = [
     { 
       service: "App Development", 
-      price: "₹34,999", 
-      partner: "₹10K-₹15K", 
-      you: "Remaining",
+      price: "Coming Soon", 
+      partner: "Coming Soon", 
+      you: "TBD",
       highlight: true
     },
     { 
       service: "Website", 
-      price: "₹15K-₹25K", 
-      partner: "30-40%", 
-      you: "60-70%",
+      price: "Coming Soon", 
+      partner: "Coming Soon", 
+      you: "TBD",
       highlight: false
     },
     { 
       service: "Custom SaaS", 
-      price: "₹50K+", 
-      partner: "Negotiable", 
-      you: "High margin",
+      price: "Coming Soon", 
+      partner: "Coming Soon", 
+      you: "TBD",
       highlight: false
     }
   ];
@@ -89,10 +89,31 @@ const ServiceRevenue = () => {
               </Table>
             </div>
             
-            <div className="p-8 bg-primary/5 border-t border-slate-100 text-center">
+            <div className="p-8 bg-primary/5 border-t border-slate-100 text-center space-y-4">
               <p className="text-sm font-black text-primary uppercase tracking-[0.2em]">
                 Maximize Your Potential with Custom Packages
               </p>
+              
+              <div className="pt-6 border-t border-primary/10 mt-6 grid md:grid-cols-2 gap-8 items-center text-left">
+                <div className="space-y-2">
+                  <h4 className="text-lg font-black text-slate-900 uppercase tracking-tight">Ongoing Royalty</h4>
+                  <p className="text-sm text-slate-600 font-medium leading-relaxed">
+                    Applicable <span className="text-primary font-bold">after 25 active clients</span>. 
+                    Royalty fee per client ranges from <span className="text-primary font-bold">4% to 15%</span>, 
+                    scaling based on the Franchise net income.
+                  </p>
+                </div>
+                <div className="bg-white/50 p-4 rounded-2xl border border-primary/10 backdrop-blur-sm">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-bold text-slate-400 uppercase">Retention Threshold</span>
+                    <span className="text-xs font-black text-primary font-mono">25 CLIENTS</span>
+                  </div>
+                  <div className="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
+                    <div className="bg-primary h-full w-[40%]" />
+                  </div>
+                  <p className="text-[10px] text-slate-400 font-bold mt-2 uppercase tracking-widest text-right">Royalty Free Until 25 Clients</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

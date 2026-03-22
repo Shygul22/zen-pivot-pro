@@ -1,8 +1,7 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Check, Info } from "lucide-react";
+import { Info } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
@@ -50,7 +49,9 @@ const PricingTable = () => {
         "Support: 24/7 Dedicated Manager",
         "Training: Full Masterclass (Complete)",
         "Premium Marketing Kit",
-        "White-Label Ready Option",
+        "White-Label Options:",
+        "• ₹29,999 + 50% Share (All Clients)",
+        "• Maintenance Fee + 10% (Per Client)",
         "Strategic Consulting",
         "Global Expansion Rights"
       ],
@@ -98,23 +99,17 @@ const PricingTable = () => {
                 <div className="text-xs font-bold text-slate-400 uppercase tracking-widest pt-1">One-time Investment</div>
               </div>
 
-              <ul className="space-y-4 flex-1">
-                {pkg.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <div className="w-5 h-5 rounded-full bg-emerald-500/10 flex items-center justify-center shrink-0 mt-0.5">
-                      <Check className="w-3 h-3 text-emerald-600" />
-                    </div>
-                    <span className="text-sm font-bold text-slate-600">{feature}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="flex-1 flex flex-col items-center justify-center p-8 bg-slate-50/50 rounded-3xl border border-dashed border-slate-200">
+                <div className="text-lg font-black text-slate-400 uppercase tracking-widest">Coming Soon</div>
+                <p className="text-xs text-slate-400 font-bold mt-2 text-center uppercase tracking-tighter">Features & Modules TBD</p>
+              </div>
 
               <Button 
                 variant={pkg.popular ? "default" : "outline"}
+                disabled={true}
                 className={`w-full h-14 font-black rounded-2xl ${pkg.popular ? "shadow-xl" : ""}`}
-                onClick={() => navigate(`/checkout?plan=${pkg.name}&price=${pkg.price}`)}
               >
-                Choose {pkg.name}
+                Coming Soon
               </Button>
             </motion.div>
           ))}

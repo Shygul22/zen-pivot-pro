@@ -22,6 +22,7 @@ interface BlogPost {
 
 const BlogPost = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [post, setPost] = useState<BlogPost | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -169,7 +170,11 @@ const BlogPost = () => {
             <p className="text-muted-foreground">
               Let's start your journey towards better work-life balance and business success.
             </p>
-            <Button variant="hero" size="lg">
+            <Button 
+              variant="hero" 
+              size="lg"
+              onClick={() => navigate("/checkout")}
+            >
               Get Started Today
             </Button>
           </div>

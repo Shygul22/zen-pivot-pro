@@ -107,27 +107,6 @@ const SocialProof = () => {
           </div>
         </motion.div>
 
-        {/* First 30 Days Story */}
-        <div className="mt-24 max-w-4xl mx-auto text-center space-y-12">
-          <h3 className="text-2xl font-black text-slate-900">Your First 30 Days: The Roadmap</h3>
-          <div className="grid md:grid-cols-3 gap-8 relative">
-            <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-slate-100 -z-10 hidden md:block" />
-            {[
-              { day: "Day 1-10", title: "Setup & Training", desc: "Access HQ tools and launch your local agency landing page." },
-              { day: "Day 11-20", title: "First 10 Leads", desc: "Use our marketing kit to identify your first batch of prospects." },
-              { day: "Day 21-30", title: "First Closing", desc: "Secure your first client and start your recurring revenue journey." }
-            ].map((step, i) => (
-              <div key={i} className="space-y-4 bg-white p-6 relative">
-                <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-black mx-auto shadow-lg shadow-primary/20">
-                  {i + 1}
-                </div>
-                <div className="font-black text-slate-900 uppercase tracking-widest text-[10px]">{step.day}</div>
-                <h4 className="font-bold text-slate-800">{step.title}</h4>
-                <p className="text-xs text-slate-500 leading-relaxed font-medium">{step.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

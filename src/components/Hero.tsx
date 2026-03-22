@@ -4,7 +4,11 @@ import heroImage from "@/assets/hero-image.jpg";
 import { motion } from "framer-motion";
 import { fadeInUp, fadeInDown, staggerContainer, staggerItem } from "@/lib/animations";
 
+import { useNavigate } from "react-router-dom";
+
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -62,7 +66,7 @@ const Hero = () => {
                 size="lg"
                 variant="hero"
                 className="text-lg px-8 py-6 group"
-                onClick={() => window.location.href = "https://wa.me/919092406569?text=Hi%2C%20I'm%20interested%20in%20your%20services"}
+                onClick={() => navigate("/checkout")}
               >
                 Get Started
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />

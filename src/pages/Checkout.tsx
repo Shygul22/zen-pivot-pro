@@ -113,8 +113,12 @@ const Checkout = () => {
                   
                   <div className="flex justify-between items-center pb-6 border-b border-white/10">
                     <div>
-                      <p className="font-black text-2xl text-primary">{params.plan} FRANCHISE</p>
-                      <p className="text-sm font-medium text-slate-400 italic">One-time license fee</p>
+                      <p className="font-black text-2xl text-primary uppercase">
+                        {params.plan} {(!params.plan.toLowerCase().includes('franchise') && !params.plan.toLowerCase().includes('extension') && !params.plan.toLowerCase().includes('support') && !params.plan.toLowerCase().includes('registration') && !params.plan.toLowerCase().includes('console') && !params.plan.toLowerCase().includes('development')) ? 'FRANCHISE' : ''}
+                      </p>
+                      <p className="text-sm font-medium text-slate-400 italic">
+                        {params.plan.toLowerCase().includes('franchise') ? 'One-time license fee' : 'Service Activation Fee'}
+                      </p>
                     </div>
                     <div className="text-2xl font-black">{params.price}</div>
                   </div>
@@ -124,15 +128,15 @@ const Checkout = () => {
                     <ul className="space-y-3">
                       <li className="flex items-center gap-3 text-sm font-medium text-slate-300">
                         <Check className="text-primary w-4 h-4 shrink-0" />
-                        Lifetime Tech License
+                        {params.plan.toLowerCase().includes('franchise') ? 'Lifetime Tech License' : 'Full Service Access'}
                       </li>
                       <li className="flex items-center gap-3 text-sm font-medium text-slate-300">
                         <Check className="text-primary w-4 h-4 shrink-0" />
-                        Dedicated Brand Assets
+                        {params.plan.toLowerCase().includes('franchise') ? 'Dedicated Brand Assets' : 'Priority Technical Support'}
                       </li>
                       <li className="flex items-center gap-3 text-sm font-medium text-slate-300">
                         <Check className="text-primary w-4 h-4 shrink-0" />
-                        ZenJourney Training Suite
+                        {params.plan.toLowerCase().includes('franchise') ? 'ZenJourney Training Suite' : '24/7 Digital Dashboard'}
                       </li>
                     </ul>
                   </div>
