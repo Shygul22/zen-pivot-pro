@@ -10,7 +10,6 @@ import {
 } from "@/components/ui/tooltip";
 
 const PricingTable = () => {
-  const navigate = useNavigate();
   const packages = [
     {
       name: "STARTER",

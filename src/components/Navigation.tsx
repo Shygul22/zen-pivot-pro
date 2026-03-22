@@ -61,7 +61,7 @@ const Navigation = () => {
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 }}
-                  whileHover={{ scale: 1.05, color: "hsl(var(--primary))" }}
+                  whileHover={{ scale: 1.05 }}
                   className="flex items-center gap-1 text-foreground hover:text-primary transition-colors font-medium outline-none"
                 >
                   For Business <ChevronDown className="w-4 h-4" />
@@ -103,7 +103,7 @@ const Navigation = () => {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: (index + 2) * 0.1 }}
-                whileHover={{ scale: 1.1, color: "hsl(var(--primary))" }}
+                whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={item.action}
                 className="text-foreground hover:text-primary transition-colors font-medium"
@@ -115,7 +115,7 @@ const Navigation = () => {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              whileHover={{ scale: 1.1, color: "hsl(var(--primary))" }}
+              whileHover={{ scale: 1.1 }}
               href="https://zenjourney.io/blog/"
               className="text-foreground hover:text-primary transition-colors"
             >
