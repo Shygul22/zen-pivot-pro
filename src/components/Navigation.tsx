@@ -131,7 +131,7 @@ const Navigation = () => {
               <Button
                 variant="hero"
                 size="sm"
-                onClick={() => navigate("/checkout")}
+                onClick={() => navigate("/contact")}
               >
                 Get Started
               </Button>
@@ -249,7 +249,7 @@ const Navigation = () => {
                     variant="hero"
                     className="w-full"
                     onClick={() => {
-                      navigate("/checkout");
+                      navigate("/contact");
                       setIsMenuOpen(false);
                     }}
                   >

@@ -13,7 +13,7 @@ const InternshipPolicy = () => {
                 Digital Innovation Internship Program
               </h1>
               <p className="text-muted-foreground">
-                Last Updated: March 14, 2026
+                Last Updated: April 9, 2026
               </p>
             </div>
 
@@ -21,7 +21,7 @@ const InternshipPolicy = () => {
               <section>
                 <h2 className="text-2xl font-bold text-foreground mb-4">1. Company Overview</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Zenjourney is a forward-thinking technology and business services company dedicated to transforming ideas into digital reality. We collaborate with startups, SMEs, and enterprises to build scalable digital products and business strategies.
+                  ZENJOURNEY PRIVATE LIMITED (CIN No - U62013TN2026PTC191867) is a forward-thinking technology and business services company dedicated to transforming ideas into digital reality. We collaborate with startups, SMEs, and enterprises to build scalable digital products and business strategies.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mt-4">
                   We operate as a hybrid team, combining remote flexibility with structured collaboration. Our core areas include:
@@ -51,21 +51,13 @@ const InternshipPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-foreground mb-4">3. Stipend & Fee Structure</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-4">3. Fee Structure</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <div className="bg-muted p-4 rounded-lg border border-border">
-                    <p><strong className="text-foreground">Internship Fee (6 Months):</strong> ₹2999 (One-Time Payment)</p>
-                    <p><strong className="text-foreground">Payment Type:</strong> Single Payment</p>
-                    <p><strong className="text-foreground">Refund Policy:</strong> Non-Refundable</p>
+                    <p><strong className="text-foreground">Internship Certificate Fee:</strong> ₹499 (Non-Refundable)</p>
+                    <p><strong className="text-foreground">Payment Schedule:</strong> Payable before joining</p>
+                    <p><strong className="text-foreground">Note:</strong> Mandatory for certificate issuance and processing</p>
                   </div>
-                  <p><strong className="text-foreground">Compensation:</strong> ₹1000 Stipend + Project Share (Performance-Based Incentive)</p>
-                  <p className="text-sm italic">
-                    The stipend and project share are subject to performance evaluation and successful participation in assigned projects.
-                  </p>
-                  <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                    <li>For the 3-month internship: No stipend during the first month.</li>
-                    <li>For the 6-month internship: No stipend during the first two months.</li>
-                  </ul>
                 </div>
               </section>
 
@@ -145,21 +137,27 @@ const InternshipPolicy = () => {
                 <div className="space-y-6 text-muted-foreground">
                   <div>
                     <h3 className="font-bold text-foreground mb-2">Fee Policy</h3>
-                    <p className="text-sm">The internship fee of ₹2999 is strictly non-refundable under any circumstances, including voluntary withdrawal, termination due to misconduct, or failure to complete the internship.</p>
+                    <p className="text-sm">The internship certificate fee of ₹499 is strictly non-refundable and must be paid prior to onboarding. This apply under any circumstances, including voluntary withdrawal or failure to complete the internship.</p>
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground mb-2">Employment Guarantee</h3>
-                    <p className="text-sm">This internship does not guarantee employment or full-time placement. Any future opportunity with Zenjourney will be strictly performance-based.</p>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-foreground mb-2">Stipend Conditions</h3>
-                    <p className="text-sm">The ₹1000 stipend and project share are performance-based and subject to internal evaluation. Zenjourney reserves the right to withhold the stipend in cases of non-performance, policy violations, or incomplete participation.</p>
+                    <p className="text-sm">This internship does not guarantee employment or full-time placement. Any future opportunity with ZENJOURNEY PRIVATE LIMITED will be strictly performance-based.</p>
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground mb-2">Intellectual Property Ownership</h3>
-                    <p className="text-sm">All work created during the internship shall remain the sole intellectual property of Zenjourney. Interns may not reuse, distribute, or claim ownership without written permission.</p>
+                    <p className="text-sm">All work created during the internship shall remain the sole intellectual property of ZENJOURNEY PRIVATE LIMITED. Interns may not reuse, distribute, or claim ownership without written permission.</p>
                   </div>
                 </div>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-foreground mb-4">9. Employment Applicability</h2>
+                <p className="text-muted-foreground leading-relaxed">
+                  Upon successful completion of the internship program, candidates who demonstrate exceptional performance, technical excellence, and professional growth will be eligible for a performance review for potential full-time employment at ZENJOURNEY PRIVATE LIMITED. 
+                </p>
+                <p className="text-muted-foreground leading-relaxed mt-4">
+                  Selection for full-time roles is strictly based on internal evaluation, project requirements, and the intern's overall contribution during the program.
+                </p>
               </section>
 
               <section className="bg-primary/5 p-8 rounded-2xl border border-primary/20">
@@ -171,9 +169,11 @@ const InternshipPolicy = () => {
 
               <section className="text-center pt-8 border-t border-border">
                 <h2 className="text-2xl font-bold text-foreground mb-4">Contact Us</h2>
-                <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-muted-foreground">
+                <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-6 text-muted-foreground">
                   <p><strong className="text-foreground">Email:</strong> info@zenjourney.io</p>
                   <p><strong className="text-foreground">Phone:</strong> +91 9092406569, +91 9629236257</p>
+                  <p><strong className="text-foreground">UDYAM Registration:</strong> UDYAM-TN-04-0104781</p>
+                  <p><strong className="text-foreground">CIN No:</strong> U62013TN2026PTC191867</p>
                 </div>
               </section>
             </div>

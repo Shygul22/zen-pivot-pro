@@ -24,26 +24,27 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Badge variant="secondary" className="px-4 py-1 text-primary bg-primary/10 border-primary/20 hover:bg-primary/20 transition-colors uppercase tracking-widest text-xs font-bold">
+            <Badge variant="secondary" className="px-6 py-2 text-primary bg-primary/10 border-none rounded-full uppercase tracking-[0.2em] text-[10px] font-black">
               Franchise Opportunity
             </Badge>
           </motion.div>
-
+ 
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 leading-[1.1]"
+            className="text-6xl md:text-8xl font-black tracking-tight text-slate-900 leading-[0.95]"
           >
-            Build Your Own SaaS Business <br className="hidden md:block" />
-            <span className="text-primary italic">Without Coding</span>
+            Build Your Own SaaS <br />
+            Business <br />
+            <span className="text-primary tracking-tight">Without Coding</span>
           </motion.h1>
-
+ 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-slate-600 max-w-2xl mx-auto leading-relaxed font-medium"
           >
             Partner with ZenJourney and offer enterprise-grade software solutions to your local market. 
             We provide the tech, you drive the growth.
@@ -58,17 +59,9 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               className="px-10 h-16 text-lg font-bold shadow-2xl shadow-primary/20 bg-primary hover:bg-primary/90"
-              onClick={() => navigate("/checkout?plan=STARTER&price=₹16,999")}
+              onClick={() => navigate("/contact")}
             >
               Apply for Franchise
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="px-10 h-16 text-lg font-bold border-2"
-              onClick={() => window.open("https://forms.gle/WXKcB8c5hpCeorbk9", "_blank")}
-            >
-              Book a Free Consultation
             </Button>
           </motion.div>
 

@@ -9,21 +9,23 @@ import {
   CheckCircle2,
   Code2,
   Database,
-  UserCheck
+  UserCheck,
+  Users
 } from "lucide-react";
 
 const BusinessOverview = () => {
-  const sellItems = [
-    { title: "Android App Development", icon: Smartphone, color: "text-emerald-500" },
-    { title: "Website Development", icon: Globe, color: "text-blue-500" },
-    { title: "SaaS Solutions", icon: Code2, color: "text-purple-500" },
-    { title: "Business Consulting", icon: Briefcase, color: "text-orange-500" }
+  const centralTeam = [
+    { title: "Development (Apps & Websites)", icon: Code2, color: "text-blue-500" },
+    { title: "Server & SaaS management", icon: Database, color: "text-indigo-500" },
+    { title: "QA & deployment", icon: Settings, color: "text-slate-500" },
+    { title: "Technical support", icon: UserCheck, color: "text-emerald-500" }
   ];
 
-  const handleItems = [
-    { title: "Tech Development", icon: Database },
-    { title: "Backend Systems", icon: Settings },
-    { title: "Training & Support", icon: UserCheck }
+  const partnerRole = [
+    { title: "Lead generation", icon: Users, color: "text-primary" },
+    { title: "Client communication", icon: Globe, color: "text-primary" },
+    { title: "Sales closing", icon: Briefcase, color: "text-primary" },
+    { title: "Basic support", icon: Compass, color: "text-primary" }
   ];
 
   return (
@@ -38,7 +40,7 @@ const BusinessOverview = () => {
               ZenJourney SaaS Franchise Model
             </h2>
             <p className="text-lg text-primary font-black uppercase tracking-widest bg-primary/5 inline-block px-6 py-2 rounded-full border border-primary/10">
-              Dodo Payments Integrated Business System
+              Paytm Integrated Business System
             </p>
           </div>
 
@@ -53,28 +55,28 @@ const BusinessOverview = () => {
 
               <div className="grid md:grid-cols-2 gap-12">
                 <div className="space-y-6">
-                  <h4 className="text-sm font-black uppercase tracking-[0.2em] text-primary flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary" /> What You Sell
+                  <h4 className="text-sm font-black uppercase tracking-[0.2em] text-slate-400 flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-slate-300" /> CENTRAL TEAM (ZENJOURNEY)
                   </h4>
                   <div className="space-y-4">
-                    {sellItems.map((item, i) => (
-                      <div key={i} className="flex items-center gap-4 bg-white p-4 rounded-2xl border border-slate-100 shadow-sm group hover:border-primary/20 transition-all">
+                    {centralTeam.map((item, i) => (
+                      <div key={i} className="flex items-center gap-4 bg-slate-100/50 p-4 rounded-2xl border border-slate-200 group transition-all">
                         <item.icon className={`w-6 h-6 ${item.color}`} />
-                        <span className="font-bold text-slate-700">{item.title}</span>
+                        <span className="font-bold text-slate-600">{item.title}</span>
                       </div>
                     ))}
                   </div>
                 </div>
 
                 <div className="space-y-6">
-                  <h4 className="text-sm font-black uppercase tracking-[0.2em] text-slate-400 flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-slate-300" /> ZenJourney Handles
+                  <h4 className="text-sm font-black uppercase tracking-[0.2em] text-primary flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary" /> FRANCHISE PARTNER ROLE
                   </h4>
                   <div className="space-y-4">
-                    {handleItems.map((item, i) => (
-                      <div key={i} className="flex items-center gap-4 bg-slate-100/50 p-4 rounded-2xl border border-slate-200 group transition-all">
-                        <item.icon className="w-6 h-6 text-slate-500" />
-                        <span className="font-bold text-slate-600">{item.title}</span>
+                    {partnerRole.map((item, i) => (
+                      <div key={i} className="flex items-center gap-4 bg-white p-4 rounded-2xl border border-slate-100 shadow-sm group hover:border-primary/20 transition-all">
+                        <item.icon className={`w-6 h-6 ${item.color}`} />
+                        <span className="font-bold text-slate-700">{item.title}</span>
                       </div>
                     ))}
                   </div>

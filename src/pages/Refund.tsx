@@ -13,7 +13,7 @@ const Refund = () => {
                 Refund Policy
               </h1>
               <p className="text-muted-foreground">
-                Last Updated: January 25, 2025
+                Last Updated: April 9, 2026
               </p>
             </div>
 
@@ -21,7 +21,7 @@ const Refund = () => {
               <section>
                 <h2 className="text-2xl font-bold text-foreground mb-4">1. Overview</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  At ZenJourney, we strive to ensure your satisfaction with our services. This Refund Policy outlines
+                  At ZENJOURNEY PRIVATE LIMITED (CIN No - U62013TN2026PTC191867), we strive to ensure your satisfaction with our services. This Refund Policy outlines
                   the circumstances under which refunds may be issued and the process for requesting them. By using our
                   services, you agree to this policy.
                 </p>
@@ -85,7 +85,7 @@ const Refund = () => {
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                   <li>Processing time: 5-7 business days from approval</li>
-                  <li>PhonePe refunds: 3-5 business days to reflect in your account</li>
+                  <li>Paytm refunds: 3-5 business days to reflect in your account</li>
                   <li>Bank refunds: 7-10 business days depending on your bank</li>
                   <li>You will receive a confirmation email once the refund is processed</li>
                 </ul>
@@ -155,6 +155,7 @@ const Refund = () => {
                   <p><strong className="text-foreground">Website:</strong> ZenJourney.io</p>
                   <p><strong className="text-foreground">Business Hours:</strong> Monday-Friday, 9:00 AM - 6:00 PM IST</p>
                   <p><strong className="text-foreground">UDYAM Registration:</strong> UDYAM-TN-04-0104781</p>
+                  <p><strong className="text-foreground">CIN No:</strong> U62013TN2026PTC191867</p>
                 </div>
               </section>
             </div>

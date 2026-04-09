@@ -7,6 +7,7 @@ import HeroSection from "@/components/franchise/HeroSection";
 import HowItWorks from "@/components/franchise/HowItWorks";
 import BusinessOverview from "@/components/franchise/BusinessOverview";
 import ServiceRevenue from "@/components/franchise/ServiceRevenue";
+import EarningsCalculator from "@/components/franchise/EarningsCalculator";
 import TargetMarkets from "@/components/franchise/TargetMarkets";
 import WhyChoose from "@/components/franchise/WhyChoose";
 import SocialProof from "@/components/franchise/SocialProof";
@@ -14,7 +15,7 @@ import SupportSystem from "@/components/franchise/SupportSystem";
 import WhoIsThisFor from "@/components/franchise/WhoIsThisFor";
 import PricingTable from "@/components/franchise/PricingTable";
 import FAQSection from "@/components/franchise/FAQSection";
-import ContactSection from "@/components/franchise/ContactSection";
+import CommonContact from "@/components/CommonContact";
 
 
 const SaaSFranchise = () => {
@@ -35,6 +36,7 @@ const SaaSFranchise = () => {
         <HowItWorks />
         <BusinessOverview />
         <ServiceRevenue />
+        <EarningsCalculator />
         <SocialProof />
         <TargetMarkets />
         
@@ -54,7 +56,7 @@ const SaaSFranchise = () => {
         {/* Conversions */}
         <PricingTable />
         <FAQSection />
-        <ContactSection />
+        <CommonContact />
       </main>
 
       <Footer />

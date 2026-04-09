@@ -8,8 +8,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-primary">
-              ZenJourney
+            <h3 className="text-xl font-bold text-primary leading-tight">
+              ZENJOURNEY PRIVATE LIMITED <br/>
+              <span className="text-xs">CIN No - U62013TN2026PTC191867</span>
             </h3>
             <p className="text-muted-foreground text-sm">
               Software Development & IT Services
@@ -37,6 +38,11 @@ const Footer = () => {
               <li>
                 <Link to="/saas-franchise" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                   SaaS Franchise Partner
+                </Link>
+              </li>
+              <li>
+                <Link to="/faq" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                  FAQ
                 </Link>
               </li>
               <li>
@@ -82,6 +88,21 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/employment-agreement" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                  Employment Agreement
+                </Link>
+              </li>
+              <li>
+                <Link to="/work-policy" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                  Work Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/benefits-guide" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                  Benefits Guide
+                </Link>
+              </li>
+              <li>
                 <a
                   href="https://docs.google.com/document/d/e/2PACX-1vT4l_0fu0j9WuQlHSUgLUV-f__SenaCNTTFY4Eibr6fgoMT6b3SMmpxy0CdZTByduVFP039HW3PpZFc/pub"
                   target="_blank"
@@ -92,6 +113,9 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
+            <p className="mt-4 text-[10px] text-muted-foreground leading-relaxed italic border-l-2 border-primary/20 pl-3">
+              Note: We kindly request you to review your policy documents, as the information on our website may not be up to date. We would appreciate it if you could cross-check and confirm accordingly.
+            </p>
           </div>
 
           {/* Contact */}
@@ -106,16 +130,14 @@ const Footer = () => {
         </div>
 
         <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} ZenJourney. All rights reserved.
+          <p className="text-[10px] text-muted-foreground">
+            © {new Date().getFullYear()} ZENJOURNEY PRIVATE LIMITED. All rights reserved.
           </p>
           <div className="flex items-center gap-2 text-xs text-muted-foreground">
             <span>Secured by:</span>
-            <span className="font-semibold">PhonePe</span>
-            <span className="w-1 h-1 rounded-full bg-muted-foreground/50" />
             <span className="font-semibold">PayPal</span>
             <span className="w-1 h-1 rounded-full bg-muted-foreground/50" />
-            <span className="font-semibold">Dodo Payments</span>
+            <span className="font-semibold">Paytm</span>
           </div>
         </div>
       </div>

@@ -173,7 +173,7 @@ const BlogPost = () => {
             <Button 
               variant="hero" 
               size="lg"
-              onClick={() => navigate("/checkout")}
+              onClick={() => navigate("/contact")}
             >
               Get Started Today
             </Button>

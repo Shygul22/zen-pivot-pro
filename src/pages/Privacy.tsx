@@ -13,7 +13,7 @@ const Privacy = () => {
                 Privacy Policy
               </h1>
               <p className="text-muted-foreground">
-                Last Updated: January 25, 2025
+                Last Updated: April 9, 2026
               </p>
             </div>
 
@@ -21,7 +21,7 @@ const Privacy = () => {
               <section>
                 <h2 className="text-2xl font-bold text-foreground mb-4">1. Introduction</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  ZenJourney ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy
+                  ZENJOURNEY PRIVATE LIMITED (\"we,\" \"our,\" or \"us\"), a registered company with CIN No - U62013TN2026PTC191867, is committed to protecting your privacy. This Privacy Policy
                   explains how we collect, use, disclose, and safeguard your information when you use our services.
                   Please read this policy carefully.
                 </p>
@@ -37,7 +37,7 @@ const Privacy = () => {
                   <li>Name and contact information (email address, phone number)</li>
                   <li>Business information (company name, role, industry)</li>
                   <li>Account credentials (username, password)</li>
-                  <li>Payment information (processed securely through PhonePe)</li>
+                  <li>Payment information (processed securely through Paytm)</li>
                   <li>Communication preferences</li>
                 </ul>
 
@@ -153,6 +153,7 @@ const Privacy = () => {
                   <p><strong className="text-foreground">Phone:</strong> +91 9092406569, +91 9629236257</p>
                   <p><strong className="text-foreground">Website:</strong> ZenJourney.io</p>
                   <p><strong className="text-foreground">UDYAM Registration:</strong> UDYAM-TN-04-0104781</p>
+                  <p><strong className="text-foreground">CIN No:</strong> U62013TN2026PTC191867</p>
                 </div>
               </section>
             </div>

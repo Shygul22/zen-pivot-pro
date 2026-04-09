@@ -13,7 +13,7 @@ const Terms = () => {
                 Terms & Conditions
               </h1>
               <p className="text-muted-foreground">
-                Last Updated: January 25, 2025
+                Last Updated: April 9, 2026
               </p>
             </div>
 
@@ -21,7 +21,7 @@ const Terms = () => {
               <section>
                 <h2 className="text-2xl font-bold text-foreground mb-4">1. Agreement to Terms</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  By accessing or using ZenJourney's services, you agree to be bound by these Terms and Conditions.
+                  By accessing or using the services of ZENJOURNEY PRIVATE LIMITED (CIN No - U62013TN2026PTC191867), you agree to be bound by these Terms and Conditions.
                   If you disagree with any part of these terms, you may not access our services.
                 </p>
               </section>
@@ -29,7 +29,7 @@ const Terms = () => {
               <section>
                 <h2 className="text-2xl font-bold text-foreground mb-4">2. Use of Services</h2>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  ZenJourney provides backup support for business and professional life, including real-time collaboration
+                  ZENJOURNEY PRIVATE LIMITED provides backup support for business and professional life, including real-time collaboration
                   and project development services. You agree to:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
@@ -44,7 +44,7 @@ const Terms = () => {
               <section>
                 <h2 className="text-2xl font-bold text-foreground mb-4">3. Intellectual Property Rights</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  All content, features, and functionality of ZenJourney services are owned by ZenJourney and are
+                  All content, features, and functionality of the services are owned by ZENJOURNEY PRIVATE LIMITED and are
                   protected by international copyright, trademark, and other intellectual property laws. You may not
                   reproduce, distribute, or create derivative works without express written permission.
                 </p>
@@ -67,7 +67,7 @@ const Terms = () => {
               <section>
                 <h2 className="text-2xl font-bold text-foreground mb-4">5. Payment Terms</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Payments are processed through PhonePe for B2C transactions. All fees are in Indian Rupees (INR)
+                  Payments are processed through Paytm for B2C transactions. All fees are in Indian Rupees (INR)
                   unless otherwise specified. You agree to pay all charges at the prices in effect when the charges
                   are incurred. We reserve the right to change our prices at any time with reasonable notice.
                 </p>
@@ -76,7 +76,7 @@ const Terms = () => {
               <section>
                 <h2 className="text-2xl font-bold text-foreground mb-4">6. Limitation of Liability</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  To the maximum extent permitted by law, ZenJourney shall not be liable for any indirect, incidental,
+                  To the maximum extent permitted by law, ZENJOURNEY PRIVATE LIMITED shall not be liable for any indirect, incidental,
                   special, consequential, or punitive damages, including but not limited to loss of profits, data, or
                   business opportunities arising from your use of our services.
                 </p>
@@ -118,6 +118,7 @@ const Terms = () => {
                   <p><strong className="text-foreground">Phone:</strong> +91 9092406569, +91 9629236257</p>
                   <p><strong className="text-foreground">Website:</strong> ZenJourney.io</p>
                   <p><strong className="text-foreground">UDYAM Registration:</strong> UDYAM-TN-04-0104781</p>
+                  <p><strong className="text-foreground">CIN No:</strong> U62013TN2026PTC191867</p>
                 </div>
               </section>
             </div>

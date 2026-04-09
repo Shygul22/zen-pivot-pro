@@ -43,11 +43,11 @@ const Hero = () => {
             </motion.div>
             <motion.h1
               variants={fadeInUp}
-              className="text-5xl md:text-7xl font-bold text-foreground leading-tight"
+              className="text-4xl sm:text-5xl md:text-7xl font-bold text-foreground leading-tight"
             >
               Transforming Ideas into
               <br />
-              Digital Reality
+              <span className="text-primary italic">Digital Reality</span>
             </motion.h1>
             <motion.p
               variants={fadeInUp}
@@ -66,7 +66,7 @@ const Hero = () => {
                 size="lg"
                 variant="hero"
                 className="text-lg px-8 py-6 group"
-                onClick={() => navigate("/checkout")}
+                onClick={() => navigate("/contact")}
               >
                 Get Started
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />

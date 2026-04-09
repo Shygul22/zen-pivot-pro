@@ -11,8 +11,8 @@ const SupportSystem = () => {
     },
     {
       icon: Headphones,
-      title: "Demo Support",
-      description: "Our experts assist with your first few client demos to ensure closing."
+      title: "Closing Support",
+      description: "Our experts assist with your first few client deals to ensure successful closing."
     },
     {
       icon: Megaphone,

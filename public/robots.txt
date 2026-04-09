@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://zenjourney.in/sitemap.xml
+
+Sitemap: https://zenjourney.io/sitemap.xml

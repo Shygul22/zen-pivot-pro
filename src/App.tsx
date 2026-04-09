@@ -11,10 +11,14 @@ import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import Refund from "./pages/Refund";
 import InternshipPolicy from "./pages/InternshipPolicy";
+import EmploymentAgreement from "./pages/EmploymentAgreement";
+import WorkPolicy from "./pages/WorkPolicy";
+import BenefitsGuide from "./pages/BenefitsGuide";
 import SaaSFranchise from "./pages/SaaSFranchise";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import Checkout from "./pages/Checkout";
+import FAQPage from "./pages/FAQ";
 import NotFound from "./pages/NotFound";
 import { ThemeProvider } from "./components/theme-provider";
 
@@ -36,10 +40,14 @@ const App = () => (
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/refund" element={<Refund />} />
             <Route path="/internship-policy" element={<InternshipPolicy />} />
+            <Route path="/employment-agreement" element={<EmploymentAgreement />} />
+            <Route path="/work-policy" element={<WorkPolicy />} />
+            <Route path="/benefits-guide" element={<BenefitsGuide />} />
             <Route path="/saas-franchise" element={<SaaSFranchise />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="/faq" element={<FAQPage />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Briefcase, Smartphone, Globe, ShoppingBag, Chrome, Check, ChevronDown, ChevronUp, Users, Activity, Sparkles, Coffee, Truck } from "lucide-react";
+import { Briefcase, Smartphone, Globe, ShoppingBag, Check, ChevronDown, ChevronUp, Users } from "lucide-react";
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { fadeInUp, staggerContainer, staggerItem } from "@/lib/animations";
@@ -151,7 +151,7 @@ const Services = () => {
       plan: "Startup Plan",
       price: "₹34,999",
       mrp: "₹61,195",
-      url: "/checkout?plan=Custom Development&price=₹34,999",
+      url: "/contact",
       popular: false,
       serviceAgreement: "https://docs.google.com/document/d/e/2PACX-1vT4l_0fu0j9WuQlHSUgLUV-f__SenaCNTTFY4Eibr6fgoMT6b3SMmpxy0CdZTByduVFP039HW3PpZFc/pub",
       features: [
@@ -170,7 +170,7 @@ const Services = () => {
       plan: "One Month Support",
       price: "₹4,999",
       mrp: "₹10,000",
-      url: "/checkout?plan=Business Support&price=₹4,999",
+      url: "/contact",
       features: [
         "Finance & Accounting",
         "Sales & CRM",
@@ -181,119 +181,18 @@ const Services = () => {
         "Customer Support",
         "Digital Platforms"
       ]
-    },
-    {
-      icon: Check,
-      title: "Udyam Registration",
-      plan: "MSME Registration",
-      price: "Free",
-      mrp: null,
-      url: "/checkout?plan=Udyam Registration&price=Free",
-      features: [
-        "Official Government Registration",
-        "MSME Certificate Generation",
-        "Lifetime Validity",
-        "Digital Verification Support",
-        "Zero Registration Cost"
-      ]
-    },
-    {
-      icon: Activity,
-      title: "Healthcare Clinics ERP",
-      plan: "Digital Health Suite",
-      price: "Coming Soon",
-      mrp: null,
-      url: null,
-      comingSoon: true,
-      description: "Complete management system for clinics and hospitals.",
-      features: [
-        "Patient Records (EMR)",
-        "Appointment Scheduling",
-        "Billing & Insurance",
-        "Inventory Management",
-        "Staff Coordination",
-        "Reports & Analytics"
-      ]
-    },
-    {
-      icon: Sparkles,
-      title: "Beauty & Lifestyle CRM",
-      plan: "Salon & Spa Suite",
-      price: "Coming Soon",
-      mrp: null,
-      url: null,
-      comingSoon: true,
-      description: "Specialized CRM for beauty salons and wellness centers.",
-      features: [
-        "Customer Retention",
-        "Membership Programs",
-        "Online Bookings",
-        "Product Sales Tracking",
-        "Service History",
-        "Marketing Campaigns"
-      ]
-    },
-    {
-      icon: Coffee,
-      title: "Catering Service Management",
-      plan: "Event Ops Suite",
-      price: "Coming Soon",
-      mrp: null,
-      url: null,
-      comingSoon: true,
-      description: "Manage large-scale catering operations and events.",
-      features: [
-        "Menu Planning",
-        "Staff Scheduling",
-        "Vendor Coordination",
-        "Cost Calculation",
-        "Client Portals",
-        "Quote Generation"
-      ]
-    },
-    {
-      icon: Truck,
-      title: "Foodie QEcoms Delivery",
-      plan: "Quick Commerce Engine",
-      price: "Coming Soon",
-      mrp: null,
-      url: null,
-      comingSoon: true,
-      description: "Hyperlocal delivery platform for food and grocery.",
-      features: [
-        "Real-time Tracking",
-        "Merchant Dashboard",
-        "Driver Management",
-        "Multi-store Support",
-        "Dynamic Routing",
-        "Quick Checkout"
-      ]
     }
   ];
 
   const b2cServices = [
     {
-      icon: Chrome,
-      title: "Zenaura Extension",
-      plan: "Productivity Tool",
-      price: "Free",
-      mrp: null,
-      url: "/checkout?plan=Zenaura Extension&price=Free",
-      features: [
-        "Focus Mode",
-        "Task Management",
-        "Ambient Sounds",
-        "Daily Analytics"
-      ]
-    },
-    {
       icon: ShoppingBag,
       title: "Playstore Console Purchase",
       plan: "Developer Account",
-      price: "$30",
+      price: "₹2,500",
       mrp: null,
-      url: "/checkout?plan=Playstore Console&price=$30",
-      description: "Account purchasing $25 + $5 charges (zenjoureny)",
+      url: "/contact",
+      description: "Account purchasing (Google One-time Fee + Service Charge)",
       features: [
         "Google Play Console Access",
         "Lifetime Validity",
