@@ -73,7 +73,7 @@ const Internship = () => {
             <Button
               size="lg"
               className="px-8 py-6 text-lg"
-              onClick={() => window.open("https://forms.gle/abRVA2qKTRkQVMu18", "_blank")}
+              onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdLU2-e5nvgfCY6NnJZOUtOcOChsmUcO6IXgd2vsZMspondZA/viewform?usp=publish-editor", "_blank")}
             >
               Apply Now <ChevronRight className="ml-2 w-5 h-5" />
             </Button>
